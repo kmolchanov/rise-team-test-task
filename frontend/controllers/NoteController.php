@@ -21,4 +21,16 @@ class NoteController extends \yii\rest\ActiveController
 
         return $behaviors;
     }
+
+    public function actions()
+    {
+        $actions = parent::actions();
+
+        unset($actions['view']);
+        unset($actions['update']);
+        unset($actions['delete']);
+        unset($actions['options']);
+
+        return $actions;
+    }
 }

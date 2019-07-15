@@ -81,4 +81,17 @@ class User extends \yii\mongodb\ActiveRecord
             'updatedAt' => 'Updated At',
         ];
     }
+
+    /**
+     * @return array|false
+     */
+    public function fields()
+    {
+        return [
+            'email',
+            'firstName',
+            'lastName',
+            'createdAt',
+        ];
+    }
 }

@@ -22,4 +22,17 @@ class UserController extends \yii\rest\ActiveController
 
         return $behaviors;
     }
+
+    public function actions()
+    {
+        $actions = parent::actions();
+
+        unset($actions['view']);
+        unset($actions['create']);
+        unset($actions['update']);
+        unset($actions['delete']);
+        unset($actions['options']);
+
+        return $actions;
+    }
 }

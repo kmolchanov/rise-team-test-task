@@ -98,4 +98,17 @@ class Note extends \yii\mongodb\ActiveRecord
     {
         return $this->hasOne(User::className(), ['_id' => '_authorId']);
     }
+
+    /**
+     * @return array|false
+     */
+    public function fields()
+    {
+        return [
+            '_id',
+            'name',
+            'description',
+            'author',
+        ];
+    }
 }
