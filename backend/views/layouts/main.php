@@ -6,6 +6,7 @@
 use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap\NavBar;
+use yii\bootstrap\Nav;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
@@ -33,6 +34,13 @@ AppAsset::register($this);
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
+    ]);
+    $menuItems = [
+        ['label' => 'Users', 'url' => ['/user']],
+    ];
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => $menuItems,
     ]);
     NavBar::end();
     ?>
