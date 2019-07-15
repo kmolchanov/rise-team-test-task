@@ -88,6 +88,7 @@ class User extends \yii\mongodb\ActiveRecord
     public function fields()
     {
         return [
+            '_id',
             'email',
             'firstName',
             'lastName',

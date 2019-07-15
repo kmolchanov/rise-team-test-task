@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use MongoDB\BSON\UTCDateTime;
 use Yii;
 use mongosoft\mongodb\MongoDateBehavior;
 use MongoDB\BSON\ObjectId;
@@ -109,6 +110,7 @@ class Note extends \yii\mongodb\ActiveRecord
             'name',
             'description',
             'author',
+            'createdAt',
         ];
     }
 }
