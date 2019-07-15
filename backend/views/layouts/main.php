@@ -37,6 +37,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Users', 'url' => ['/user']],
+        ['label' => 'Notes', 'url' => ['/note']],
     ];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
