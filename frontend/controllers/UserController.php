@@ -23,6 +23,9 @@ class UserController extends \yii\rest\ActiveController
         return $behaviors;
     }
 
+    /**
+     * @return array
+     */
     public function actions()
     {
         $actions = parent::actions();

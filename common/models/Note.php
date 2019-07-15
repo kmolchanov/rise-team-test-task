@@ -2,9 +2,9 @@
 
 namespace common\models;
 
-use MongoDB\BSON\ObjectId;
 use Yii;
 use mongosoft\mongodb\MongoDateBehavior;
+use MongoDB\BSON\ObjectId;
 
 /**
  * This is the model class for collection "note".
